@@ -125,4 +125,7 @@ post_install() {
 	for f in ${DESTDIR}/usr/bin/*; do
 		mv ${f} ${f}-static
 	done
+
+	vmkdir "usr/share/${pkgname}/scripts"
+	vinstall scripts/qemu-binfmt-conf.sh 755 "usr/share/${pkgname}/scripts"
 }

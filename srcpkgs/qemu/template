@@ -81,6 +81,9 @@ post_install() {
 	chmod u+s ${DESTDIR}/usr/libexec/qemu-bridge-helper
 
 	vsv qemu-ga
+
+	vmkdir "usr/share/${pkgname}/scripts"
+	vinstall scripts/qemu-binfmt-conf.sh 755 "usr/share/${pkgname}/scripts"
 }
 
 qemu-ga_package() {

@@ -1,0 +1,19 @@
+# Template file for 'eww'
+pkgname=eww
+version=0.3.0
+revision=1
+build_style=cargo
+configure_args="+nightly"
+hostmakedepends="gcc"
+makedepends="pkg-config glib-devel atk-devel cairo-devel pango-devel gtk+3-devel gdk-pixbuf-devel"
+#depends="gdk-pixbuf"
+short_desc="ElKowars wacky widgets"
+maintainer="Animeshz <animeshsahu19@yahoo.com>"
+license="MIT"
+homepage="https://github.com/elkowar/eww"
+distfiles="${homepage}/archive/v${version}.tar.gz"
+checksum=5b6ef95836e298b856498c9fb75d24b6abed4bb3275137d00fe31cceffe3ced1
+
+post_install() {
+	vlicense LICENSE
+}

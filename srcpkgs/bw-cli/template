@@ -1,0 +1,15 @@
+# Template file for 'bw-cli'
+pkgname=bw-cli
+version=1.22.1
+revision=1
+wrksrc="cli-${version}"
+build_style=npm
+hostmakedepends=""
+makedepends=""
+depends="nodejs-runtime"
+short_desc="Bitwarden Cli"
+maintainer="Animesh Sahu <animeshsahu19@yahoo.com>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/bitwarden/cli"
+distfiles="https://github.com/bitwarden/cli/archive/refs/tags/v1.22.1.tar.gz"
+checksum=5f4c90c84a0d8401347a7ef3b1e87a60b5d36494f0251fd2e7ea824935d9325d
